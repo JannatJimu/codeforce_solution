@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner in = new Scanner (System.in);
+        int n=in.nextInt();
+        int a,b,c;
+        int sum = 0;
+        for(int i=1;i<=n;i++)
+        {
+            a=in.nextInt();
+            b=in.nextInt();
+            c=in.nextInt();
+            if( (a==1 && b==1 &&c==1)||(a==1&&b==1&&c==0)||(a==0 &&b==1 &&c==1)||(c==1 &&b==0 &&a==1))
+            {
+               sum= sum+1;
+            }
+        }
+        System.out.printf("%d\n",sum);
+    }
+    
+}
